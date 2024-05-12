@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+  <persistence-unit name="feriaUnit">
+    <class>com.uptc.frmw.models.Person</class>
+      <class>com.uptc.frmw.models.Book</class>
+      <class>com.uptc.frmw.models.Bill</class>
+      <class>com.uptc.frmw.models.BillDetail</class>
+      <class>com.uptc.frmw.models.Edition</class>
+      <class>com.uptc.frmw.models.Nationality</class>
+      <class>com.uptc.frmw.models.NationalityPerson</class>
+    <properties>
+        <property name="jakarta.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+        <property name="jakarta.persistence.jdbc.url" value="jdbc:oracle:thin:@192.168.1.110:1534:NOMINA"/>
+        <property name="jakarta.persistence.jdbc.user" value="FERIA_LIBRO_COMP"/>
+        <property name="jakarta.persistence.jdbc.password" value="A"/>
+        <property name="hibernate.show_sql" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
